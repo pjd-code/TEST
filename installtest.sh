@@ -16,6 +16,7 @@ wget https://data.qiime2.org/distro/core/qiime2-2021.4-py38-linux-conda.yml &>> 
 conda env create -n qiime2-2021.4 --file qiime2-2021.4-py38-linux-conda.yml &>> Logfile.txt
 #cleanup - removes the qiime2 yml
 rm qiime2-2021.4-py36-linux-conda.yml &>> Logfile.txt
-onda init &>> Logfile.txt
+rm Miniconda3-4.5.4-Linux-x86_64.sh
+conda init &>> Logfile.txt
 echo "3. Conda Initiated!"
 echo "4. Qiime2 Install Complete! All Qiime2 cells must start with source activate qiime2-2021.4"
