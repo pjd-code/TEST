@@ -7,8 +7,8 @@ bash ./Miniconda3-4.5.4-Linux-x86_64.sh -b -f -p /usr/local &>> Logfile.txt
 echo "1. Conda Installed!"
 
 #update conda while keeping python 3.6
-! conda install --channel defaults conda python=3.6 --yes &>> Logfile.txt
-! conda update --channel defaults --all --yes &>> Logfile.txt
+conda install --channel defaults conda python=3.6 --yes &>> Logfile.txt
+conda update --channel defaults --all --yes &>> Logfile.txt
 echo "2. Conda Updated!"
 
 #The instructions for this step come from https://docs.qiime2.org/2021.4/install/native/
